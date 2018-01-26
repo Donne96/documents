@@ -1,11 +1,23 @@
 install:
   - sudo pip install proselint
+
+script: 
+  - proselint my_prose.md
+
+
+install:
   - sudo apt-get install npm
   - sudo npm install -g markdown-link-check
 
 script: 
-  - proselint my_prose.md
 - ./check_dead_linkslanguage: python
 
 python:
-"python test_app.py"
+    - "2.6"
+    - "2.7"
+    - "3.2"
+    - "3.3"
+    - "3.4"
+    - "pypy"
+script:
+- "python test_app.py"
