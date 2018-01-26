@@ -1,5 +1,15 @@
+Travis proselint add-on
 install:
   - sudo pip install proselint
 
 script: 
   - proselint my_prose.md
+
+
+Travis line-check add-on
+install:
+  - sudo apt-get install npm
+  - sudo npm install -g markdown-link-check
+
+script: 
+- ./check_dead_links
