@@ -1,3 +1,3 @@
 Japanese KUNG FU CAT
 
-![Image of yaktocat](../../Pictures/yaktocat.png)
+![Image of yaktocat](yaktocat.png)
